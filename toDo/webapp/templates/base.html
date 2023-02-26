@@ -1,0 +1,20 @@
+{% load static %}
+{% load django_bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% bootstrap_messages %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+{% block nav %}{% endblock %}
+<div class="base-container">
+    {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>
